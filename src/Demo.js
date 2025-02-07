@@ -25,10 +25,7 @@ const Demo = () => {
 
   const timeDiff = useMemo(() => {
     if (useEffectData && useSwrData) {
-      return (
-        ((useEffectData.time - useSwrData.time) / useEffectData.time) *
-        100
-      ).toFixed(2);
+      return (useEffectData.time - useSwrData.time).toFixed(2);
     }
     return 0;
   }, [!!useEffectData, !!useSwrData]);

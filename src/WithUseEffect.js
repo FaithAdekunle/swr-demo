@@ -6,7 +6,7 @@ const WithUseEffect = ({ count, timeDiff }) => {
         <span className="underline font-bold">UseEffect</span>
         {timeDiff >= 0
           ? null
-          : ` - Sent request ${Math.abs(timeDiff)}% earlier.`}
+          : ` - Sent request ${Math.abs(timeDiff)}ms earlier.`}
       </p>
       <div className="p4 border border-gray-200 h-60 border-t-0 flex justify-center items-center">
         <div className="p-4 bg-gray-100 rounded-full">
